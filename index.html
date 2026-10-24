@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Next Stop — Transit Display Lab</title>
+<meta name="description" content="An interactive subway display design study by Aliya Byrd">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="mast">
+<a href="./" class="brand">
+<span class="mark">↗</span> NEXT STOP<span class="lab"> / TRANSIT DISPLAY LAB</span>
+</a>
+<span class="author">A design study by Aliya Byrd</span>
+</header>
+<main>
+<div class="intro">
+<div>
+<p class="eyebrow">01 / THE PASSENGER EXPERIENCE</p>
+<h1>A clearer journey.<br>
+<span>One stop at a time.</span>
+</h1>
+</div>
+<p class="lede">A subway display reimagined around the information you need, when you need it.</p>
+</div>
+<div class="display-top">
+<span>
+<i>
+</i> SIMULATED JOURNEY</span>
+<button id="fullscreen">↗ Expand display</button>
+</div>
+<section class="screen" aria-label="Simulated passenger display">
+<div class="screen-header">
+<div class="direction">
+<span class="line">A</span>
+<div>
+<strong>Downtown & Brooklyn</strong>
+<small>To Far Rockaway · demo segment</small>
+</div>
+</div>
+<div class="time">
+<span id="clock">12:00 PM</span>
+<small>LOCAL DESIGN SIMULATION</small>
+</div>
+</div>
+<div class="view" id="focus">
+<div class="next-info">
+<p class="status" id="status">NEXT STOP</p>
+<h2 id="station">
+</h2>
+<div id="connections">
+</div>
+<div id="access">
+</div>
+</div>
+<aside>
+<span class="eyebrow">COMING UP</span>
+<div id="upcoming">
+</div>
+</aside>
+</div>
+<div class="route-view" id="route" hidden>
+<div class="route-title">
+<h2>Your route ahead</h2>
+<span id="remaining">
+</span>
+</div>
+<div id="route-stations">
+</div>
+</div>
+<div class="screen-footer">
+<span id="journey-label">
+</span>
+<div class="view-buttons">
+<button id="focus-tab" aria-pressed="true">Next stop</button>
+<button id="route-tab" aria-pressed="false">Full route</button>
+</div>
+<span id="stop-count">
+</span>
+</div>
+<div class="progress">
+<div id="progress-fill">
+</div>
+</div>
+</section>
+<section class="controls" aria-label="Simulation controls">
+<div class="control-heading">
+<span class="eyebrow">SIMULATION CONTROLS</span>
+<span id="play-state">Paused · ready to explore</span>
+</div>
+<div class="control-row">
+<button id="play" class="primary">▶ Play journey</button>
+<button id="next">Next station →</button>
+<button id="reset" aria-label="Restart journey">↺ Restart</button>
+<label>Speed <select id="speed">
+<option value="1">1×</option>
+<option value="2">2×</option>
+<option value="4">4×</option>
+</select>
+</label>
+<label class="auto">
+<input type="checkbox" id="auto" checked> Auto-switch screens</label>
+<label class="jump">Jump to <select id="jump">
+</select>
+</label>
+</div>
+</section>
+<section class="notes">
+<div>
+<span class="number">01</span>
+<h3>Know what’s next</h3>
+<p>A clear station name and consistent journey states keep the next action in focus.</p>
+</div>
+<div>
+<span class="number">02</span>
+<h3>See the whole journey</h3>
+<p>Every stop in this demo segment stays visible, with transfers beside the station.</p>
+</div>
+<div>
+<span class="number">03</span>
+<h3>Accessibility, in context</h3>
+<p>Accessibility uses symbols and text. Try an elevator outage to see the display respond.</p>
+<button id="outage" aria-pressed="false">Simulate next-stop elevator outage</button>
+</div>
+</section>
+<footer>
+<a class="source-link" href="source.html">View source code &amp; download project →</a>
+<br>
+<br>INDEPENDENT CONCEPT · NOT AFFILIATED WITH THE MTA<p>Illustrative station, transfer, and accessibility data. Not live service information or travel guidance.</p>
+</footer>
+</main>
+<script src="app.js">
+</script>
+</body>
+</html>
