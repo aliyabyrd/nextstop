@@ -1,8 +1,8 @@
-# Next Stop — Transit Display Lab
+# Next Stop — Transit Display Lab!
 An independent transit display simulation by Aliya Byrd.
 
 ## Open the project
-Unzip the project and open index.html in your browser. The simulation needs no installation or build step.
+First, unzip the project and open index.html in your browser. The simulation needs no installation or build step.
 To use the source viewer as well, serve the folder: `python -m http.server 8000`, then open http://localhost:8000.
 
 ## Files
@@ -20,6 +20,6 @@ switchView() switches between next-stop and route screens.
 
 ## Editing
 Change stations in app.js to edit the journey. Change durations to adjust the three phases.
-Edit style.css to change the display. All text uses Arial with system fallbacks.
+Edit style.css to change the display. 
 The route is a 10-stop demo segment, not the complete A train route.
 Station, transfer, and accessibility information is illustrative and not verified live data.
